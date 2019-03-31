@@ -3,24 +3,16 @@
 using namespace std;
 int main()
 {
+	int a,sum=0;
+	cout<<"Введите числа:\n";
+	cin >> a;
+	while (a != 0) {
+		if (a>0) {
+			sum += a;
+		}
+		cin >> a;
+	}
+	cout<<"\n Сумма положительных чисел  = "<<sum;
 
-	int n;
-	cout<<"Введите кол-во элментов:";
-	cin>>n;
-	int a[n];
-	cout<<"Введите числа:";
-	for(int i=0; i<n; i++) {
-		cin>>a[i];
-	}
-	int sum=0;
-	for(int i=0; i<n; i++) {
-		cout<<a[i];
-		if (a[i]==0)
-			break;
-		if (a[i] > 0)
-			sum = sum + a[i];
-	}
-	
-cout<<"\nСумма положительных чисел = "<< sum;
 	return 0;
 }
